@@ -1,0 +1,7 @@
+---
+- name: Configure SQL
+  hosts: 40.87.3.152
+  connection: local
+  tasks:
+  - name: Run remote PowerShell Script
+    win_command: powershell.exe -ExecutionPolicy ByPass -File /home/vivek/demo/RunSQL.ps1
