@@ -1,0 +1,5 @@
+---
+- hosts: 40.117.150.88
+  tasks:
+    - name: run echo command
+      command: /bin/echo hello world
