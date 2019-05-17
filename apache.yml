@@ -1,5 +1,6 @@
 ---
 - hosts: 40.117.150.88
+  sudo: yes
   tasks:
-    - name: run echo command
-      command: /bin/echo hello world
+    - name: install apache2
+      apt: name=apache2 update_cache=yes state=latest
